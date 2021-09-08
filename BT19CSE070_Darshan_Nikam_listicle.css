@@ -1,9 +1,13 @@
-/* @font-face {
-  font-family: Roboto Slab;
-  src: url("");
-} */
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("./fonts/Roboto_Slab/RobotoSlab-Black.ttf");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/Source_Sans_Pro/SourceSansPro-Black.ttf");
+}
 body {
-  background-color: honeydew;
+  background-color: #d8dfde;
 }
 .bg-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -11,19 +15,20 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 500px;
   background-position: top;
-  height: 678px;
+  height: 628.933px;
 }
 
 .content-on-bg-img {
   display: flex;
   width: 100%;
-
   flex-direction: column;
   align-items: center;
 }
 
 .page-title {
   flex-basis: 450px;
+  display: flex;
+  align-items: center;
 }
 .page-title .title-text {
   font-family: "Roboto Slab", serif;
@@ -43,10 +48,12 @@ body {
   width: 100px;
   height: 100px;
   display: flex;
+  border-radius: 100%;
+  border-color: white;
+  border-width: 1px;
 }
 .instructor-name {
-  font-family: Source -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: rgb(51, 51, 51);
@@ -56,15 +63,14 @@ body {
 }
 
 .last-updated {
-  font-family: Source -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-style: italic;
   color: rgb(51, 51, 51);
   line-height: 24px;
   text-align: center;
   margin-top: -2px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .underline {
@@ -75,7 +81,6 @@ body {
 .listicle {
   width: calc(66.67% + 76px);
   height: 100px;
-
   margin-left: calc(16.675% - 38px);
 }
 .lab {
@@ -89,33 +94,28 @@ body {
   margin-right: 40px;
 }
 .lab-number {
-  font-family: serif;
+  font-family: "Roboto Slab", serif;
   font-size: 36px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.25);
 }
 .lab-heading {
-  font-family: serif;
+  font-family: "Roboto Slab", serif;
   font-size: 36px;
   font-weight: bold;
   text-align: left;
-  color: rgba(51, 51, 51, 1);
+  color: rgb(51, 51, 51);
   margin-bottom: 0px;
 }
 .lab-location {
-  font-family: serif;
+  font-family: "Roboto Slab", serif;
   font-size: 24px;
   font-weight: normal;
   text-align: left;
-  color: #82b4d6;
+  color: #42b4d6;
   text-decoration: none;
 }
 .lab-location:hover {
-  font-family: serif;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: left;
-  color: #82b4d6;
   text-decoration: underline;
 }
 .lab-info {
@@ -125,17 +125,42 @@ body {
 }
 .lab-info-text,
 .lab-recommendation-text {
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   line-height: 32px;
   color: rgb(51, 51, 51);
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .lab-recommendation {
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .lab-image-container {
   margin-bottom: 60px;
+  margin-top: 0px;
 }
 .lab-image {
   width: 100%;
+  margin-top: 3px;
+}
+@media screen and (min-device-width: 1000px) {
+  .fade::after {
+    content: "";
+    font-size: 24px;
+    color: blanchedalmond;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 510px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  .fade:hover::after {
+    opacity: 0;
+  }
 }
