@@ -1,0 +1,141 @@
+/* @font-face {
+  font-family: Roboto Slab;
+  src: url("");
+} */
+body {
+  background-color: honeydew;
+}
+.bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/VNIT_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  background-position: top;
+  height: 678px;
+}
+
+.content-on-bg-img {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  flex-basis: 450px;
+}
+.page-title .title-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+}
+.cartoon-instructor {
+  flex-basis: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartoon-instructor img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+}
+.instructor-name {
+  font-family: Source -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: -3px;
+}
+
+.last-updated {
+  font-family: Source -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(51, 51, 51);
+  line-height: 24px;
+  text-align: center;
+  margin-top: -2px;
+  margin-bottom: 10px;
+}
+
+.underline {
+  margin-top: 10px;
+  border-top: 2px solid #e6e6e6;
+  width: 100%;
+}
+.listicle {
+  width: calc(66.67% + 76px);
+  height: 100px;
+
+  margin-left: calc(16.675% - 38px);
+}
+.lab {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+}
+.lab-number-container {
+  flex-basis: 36px;
+  margin-right: 40px;
+}
+.lab-number {
+  font-family: serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.25);
+}
+.lab-heading {
+  font-family: serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  color: rgba(51, 51, 51, 1);
+  margin-bottom: 0px;
+}
+.lab-location {
+  font-family: serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+  color: #82b4d6;
+  text-decoration: none;
+}
+.lab-location:hover {
+  font-family: serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+  color: #82b4d6;
+  text-decoration: underline;
+}
+.lab-info {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.lab-info-text,
+.lab-recommendation-text {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgb(51, 51, 51);
+}
+.lab-recommendation {
+  margin-bottom: 20px;
+}
+.lab-image-container {
+  margin-bottom: 60px;
+}
+.lab-image {
+  width: 100%;
+}
